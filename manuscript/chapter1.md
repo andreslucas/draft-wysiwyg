@@ -5,3 +5,9 @@ Draft.js is a framework for *building rich text editors* in React, powered by an
 Draft.js makes it easy to build any type of rich text input, whether you're just looking to support a few inline text styles or building a complex text editor for composing long-form articles.
 
 In Draft.js, everything is customizable – Facebook provides the building blocks to have full control over the user interface.
+
+## 1.2.- Installation
+Currently Draft.js is distributed via npm. It depends on React and React DOM which must also be installed.
+```
+npm install --save draft-js react react-dom
+```
