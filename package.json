@@ -1,0 +1,25 @@
+{
+  "name": "@andreslucas/draft-wysiwyg",
+  "version": "0.0.1",
+  "description": "SPIKE #UZ-1954 UzWysiwyg PHASE II using draft.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreslucas/draft-wysiwyg.git"
+  },
+  "keywords": [
+    "draftjs",
+    "react",
+    "javascript",
+    "wysiwyg"
+  ],
+  "author": "@andreslucas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreslucas/draft-wysiwyg/issues"
+  },
+  "homepage": "https://github.com/andreslucas/draft-wysiwyg#readme"
+}
