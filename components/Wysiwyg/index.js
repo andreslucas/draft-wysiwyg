@@ -13,11 +13,42 @@
  *
  * @company UserZoom Technologies SL
  * @project draft-wysiwyg
- * @file    stories.js
+ * @file    index
  * @author  UserZoom R&D
  * @email   rd@userzoom.com
  * @date    2016-11-17
  * @summary empty.
  */
+import React from 'react';
+import {Editor, EditorState, contentState} from 'draft-js';
 
-import './Wysiwyg/stories';
+class Wysiwyg extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      editorState: EditorState.createEmpty()
+    };
+    this.onChange = (editorState, contentState) => this.setState(
+      {
+        editorState,
+        contentState: editorState.getCurrentContent(),
+      }
+    );
+  }
+  render() {
+    this.props.onUpdate ? this.props.onUpdate() : null;
+    const {editorState} = this.state;
+    return (
+      <Editor
+        editorState={editorState}
+        onChange={this.onChange}
+      />
+    );
+  }
+}
+
+Wysiwyg.propTypes = {
+  onUpdate: React.PropTypes.func,
+};
+
+export { Wysiwyg };

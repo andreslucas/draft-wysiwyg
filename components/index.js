@@ -13,11 +13,10 @@
  *
  * @company UserZoom Technologies SL
  * @project draft-wysiwyg
- * @file    stories.js
+ * @file    index
  * @author  UserZoom R&D
  * @email   rd@userzoom.com
  * @date    2016-11-17
  * @summary empty.
  */
-
-import './Wysiwyg/stories';
+export * from './Wysiwyg';
